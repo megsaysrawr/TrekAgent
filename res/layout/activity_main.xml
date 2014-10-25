@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#001452"
+    >
+    
+    <TextView android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+      />
+
+    <Button
+        android:id="@+id/CurrentLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="@string/CurrentLocation"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/MyWishList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MyWishList"
+        android:textColor="#FFFFFF" />
+    
+    <Button
+        android:id="@+id/Search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Search"
+        android:textColor="#FFFFFF" />
+    
+    
+</LinearLayout>
