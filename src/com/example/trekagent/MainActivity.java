@@ -3,35 +3,44 @@ package com.example.trekagent;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
-
+import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
+ 
 public class MainActivity extends Activity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+/** Called when the activity is first created. */
+@Override
+public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+     
+    try {
+    View.OnClickListener handler = new View.OnClickListener(){
+        public void onClick(View v) {
+            //we will use switch statement and just
+            //get thebutton's id to make things easier
+            switch (v.getId()) {
+ 
+                case R.id.CurrentLocation:
+                    Toast.makeText(getBaseContext(), "You Clicked Current Location!", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.MyWishList:
+                	Toast.makeText(getBaseContext(),  "You Clicked My Wish List!", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.Search:
+                	Toast.makeText(getBaseContext(),  "You Clicked Search!", Toast.LENGTH_SHORT).show();
+                    break;
+            }
         }
-        return super.onOptionsItemSelected(item);
-    }
+    };
+         
+    //we will set the listeners
+    findViewById(R.id.CurrentLocation).setOnClickListener(handler);
+    findViewById(R.id.MyWishList).setOnClickListener(handler);
+    findViewById(R.id.Search).setOnClickListener(handler);
+     
+    }catch(Exception e){
+         Log.e("ERROR", e.toString());
+    } 
+}
 }

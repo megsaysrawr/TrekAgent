@@ -2,7 +2,12 @@
 <resources>
 
     <string name="app_name">TrekAgent</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title">TrekAgent</string>
+    <string name="CurrentLocation">Current Location</string>
+    <string name="MyWishList">My Wish List</string>
+    <string name="Search">Search</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
