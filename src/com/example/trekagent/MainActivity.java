@@ -27,11 +27,13 @@ public class MainActivity extends Activity {
 	            switch (v.getId()) {
 	                case R.id.CurrentLocation:
 	                    Toast.makeText(getBaseContext(), "You Clicked Current Location!", Toast.LENGTH_SHORT).show();
+	                    Intent intentCurrentLocation = new Intent(context, CurrentLocation.class);
+	                    startActivity(intentCurrentLocation);
 	                    break;
 	                case R.id.MyWishList:
 	                	Toast.makeText(getBaseContext(),  "You Clicked My Wish List!", Toast.LENGTH_SHORT).show();
-	                    Intent intent = new Intent(context, MyWishList.class);
-	                	startActivity(intent);
+	                    Intent intentMyWishList = new Intent(context, MyWishList.class);
+	                	startActivity(intentMyWishList);
 	                	break;
 	                case R.id.Search:
 	                	Toast.makeText(getBaseContext(),  "You Clicked Search!", Toast.LENGTH_SHORT).show();
@@ -51,6 +53,18 @@ public class MainActivity extends Activity {
 	    } 
 	}
 	
+	public void timer() {
+		long tStart = System.currentTimeMillis();
+		long tEnd = System.currentTimeMillis();
+		long tDelta = tEnd - tStart;
+		double elapsedSeconds = tDelta / 1000.0;
+		
+		if (elapsedSeconds == 10)
+		{
+			Toast.makeText(getApplicationContext(), "WARNING: LEAVE THIS AREA IMMEDIATELY", Toast.LENGTH_LONG).show();
+		}
+	}
+		
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);

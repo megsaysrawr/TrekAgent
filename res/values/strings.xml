@@ -13,5 +13,6 @@
     <string name="LosAngeles">Los Angeles</string>
     <string name="HongKong">Hong Kong</string>
     <string name="Paris">Paris</string>
-    
+    <string name="title_activity_current_location">CurrentLocation</string>
+
 </resources>

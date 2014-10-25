@@ -30,7 +30,10 @@
             android:name=".MyWishList"
             android:label="@string/title_activity_my_wish_list" >
         </activity>
-        
+        <activity
+            android:name=".CurrentLocation"
+            android:label="@string/title_activity_current_location" >
+        </activity>
     </application>
 
 </manifest>
