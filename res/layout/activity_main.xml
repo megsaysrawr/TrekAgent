@@ -2,20 +2,29 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#001452"
+    android:background="#8882BE"
     >
     
     <TextView android:id="@+id/title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/title"
+        android:textColor="#000000" 
+        
       />
 
+    <ImageView 
+        android:id="@+id/imageView"
+        android:src="@drawable/name_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
     <Button
         android:id="@+id/CurrentLocation"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="100dp"
         android:text="@string/CurrentLocation"
         android:textColor="#FFFFFF" />
 

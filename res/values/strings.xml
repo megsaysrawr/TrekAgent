@@ -9,5 +9,9 @@
     <string name="Search">Search</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="hello_world">Hello world!</string>
-
+    <string name="title_activity_my_wish_list">MyWishList</string>
+    <string name="LosAngeles">Los Angeles</string>
+    <string name="HongKong">Hong Kong</string>
+    <string name="Paris">Paris</string>
+    
 </resources>

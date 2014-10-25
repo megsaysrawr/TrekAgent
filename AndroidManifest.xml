@@ -26,6 +26,11 @@
             android:name=".MapActivity"
             android:label="@string/title_activity_map" >
         </activity>
+        <activity
+            android:name=".MyWishList"
+            android:label="@string/title_activity_my_wish_list" >
+        </activity>
+        
     </application>
 
 </manifest>
