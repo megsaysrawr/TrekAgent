@@ -17,10 +17,11 @@ public class MainActivity extends Activity {
 /** Called when the activity is first created. */
 	 private CountDownTimer countDownTimer;
 	 public TextView text;
-	 private final long startTime = 10 * 1000;
+	 private final long startTime = 20 * 1000;
 	 private final long interval = 1 * 1000;
  	 final Context context = this;
  	 static boolean warningFlag = false;
+ 	 static boolean warningFlag2 = false;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,13 @@ public class MainActivity extends Activity {
 	    if (!warningFlag)
 	    {
 	    	warningFlag = true;
+	    	text = (TextView) this.findViewById(R.id.timer);
+	   	 	countDownTimer = new MyCountDownTimer(startTime, interval);
+	   	 	countDownTimer.start();
+	    }
+	    else if (!warningFlag2)
+	    {
+	    	warningFlag2 = true;
 	    	text = (TextView) this.findViewById(R.id.timer);
 	   	 	countDownTimer = new MyCountDownTimer(startTime, interval);
 	   	 	countDownTimer.start();
@@ -65,6 +73,8 @@ public class MainActivity extends Activity {
 	    }catch(Exception e){
 	         Log.e("ERROR", e.toString());
 	    } 
+	    
+
 	}
 	
 	 public class MyCountDownTimer extends CountDownTimer {
@@ -74,8 +84,17 @@ public class MainActivity extends Activity {
 		
 		 @Override
 		public void onFinish() {
-            Intent intentWarning = new Intent(context, Warning.class);
-         	startActivity(intentWarning);
+			 if (warningFlag2)
+			 {
+				  Intent intentWarning2 = new Intent(context, Warning2.class);
+			      startActivity(intentWarning2);
+			 }
+			 else if (warningFlag)
+			 {
+		        Intent intentWarning = new Intent(context, Warning.class);
+		        startActivity(intentWarning);
+			 }
+
 		 }
 
 		@Override

@@ -50,6 +50,10 @@
             android:name=".LosAngeles"
             android:label="@string/title_activity_los_angeles" >
         </activity>
+        <activity
+            android:name=".Warning2"
+            android:label="@string/title_activity_warning2" >
+        </activity>
     </application>
 
 </manifest>

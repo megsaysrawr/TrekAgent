@@ -28,7 +28,8 @@ public final class R {
         public static final int ic_launcher=0x7f020003;
         public static final int la=0x7f020004;
         public static final int name_logo=0x7f020005;
-        public static final int venice_beach_map=0x7f020006;
+        public static final int road_closed=0x7f020006;
+        public static final int venice_beach_map=0x7f020007;
     }
     public static final class id {
         public static final int Arusha=0x7f080009;
@@ -55,7 +56,8 @@ public final class R {
         public static final int activity_map=0x7f030005;
         public static final int activity_my_wish_list=0x7f030006;
         public static final int activity_warning=0x7f030007;
-        public static final int fragment_map=0x7f030008;
+        public static final int activity_warning2=0x7f030008;
+        public static final int fragment_map=0x7f030009;
     }
     public static final class menu {
         public static final int arusha=0x7f070000;
@@ -65,6 +67,7 @@ public final class R {
         public static final int main=0x7f070004;
         public static final int my_wish_list=0x7f070005;
         public static final int warning=0x7f070006;
+        public static final int warning2=0x7f070007;
     }
     public static final class string {
         public static final int Arusha=0x7f050009;
@@ -85,6 +88,7 @@ public final class R {
         public static final int title_activity_map=0x7f050006;
         public static final int title_activity_my_wish_list=0x7f050008;
         public static final int title_activity_warning=0x7f05000d;
+        public static final int title_activity_warning2=0x7f050012;
     }
     public static final class style {
         /** 
