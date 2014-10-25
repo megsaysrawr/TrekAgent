@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
 /** Called when the activity is first created. */
 	 private CountDownTimer countDownTimer;
 	 public TextView text;
-	 private final long startTime = 20 * 1000;
+	 private final long startTime = 60 * 1000;
 	 private final long interval = 1 * 1000;
  	 final Context context = this;
  	 static boolean warningFlag = false;
