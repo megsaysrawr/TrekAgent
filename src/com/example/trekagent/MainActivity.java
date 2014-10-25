@@ -74,8 +74,8 @@ public class MainActivity extends Activity {
 		
 		 @Override
 		public void onFinish() {
-            Intent intentMyWishList = new Intent(context, Warning.class);
-         	startActivity(intentMyWishList);
+            Intent intentWarning = new Intent(context, Warning.class);
+         	startActivity(intentWarning);
 		 }
 
 		@Override

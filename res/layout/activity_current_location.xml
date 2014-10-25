@@ -6,13 +6,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.trekagent.CurrentLocation" >
+    tools:context="com.example.trekagent.CurrentLocation" 
+    android:background="#C4DF9B" >
 
     <TextView
         android:id="@+id/CurrentLocation"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/CurrentLocation" />
+        android:layout_height="wrap_content"/>
 
     <ImageView
         android:id="@+id/imageView1"

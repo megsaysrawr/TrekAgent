@@ -7,13 +7,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.trekagent.MyWishList" 
-    android:background="#8882BE"
+    android:background="#FFF79A"
     >
 
     <TextView android:id="@+id/MyWishList"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/MyWishList"
         android:textColor="#FFFFFF" 
       />
 
@@ -25,11 +24,11 @@
         />
     
     <Button
-        android:id="@+id/LosAngeles"
+        android:id="@+id/Arusha"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="@string/LosAngeles"
+        android:text="@string/Arusha"
         android:textColor="#FFFFFF" />
 
     <Button
@@ -41,10 +40,10 @@
         android:textColor="#FFFFFF" />
     
     <Button
-        android:id="@+id/Paris"
+        android:id="@+id/LosAngeles"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="@string/Paris"
+        android:text="@string/LosAngeles"
         android:textColor="#FFFFFF" />
 </RelativeLayout>
