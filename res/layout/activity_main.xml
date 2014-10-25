@@ -42,5 +42,9 @@
         android:text="@string/Search"
         android:textColor="#FFFFFF" />
     
-    
+        <TextView android:id="@+id/timer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+      />
 </LinearLayout>

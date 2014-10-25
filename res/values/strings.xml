@@ -14,5 +14,7 @@
     <string name="HongKong">Hong Kong</string>
     <string name="Paris">Paris</string>
     <string name="title_activity_current_location">CurrentLocation</string>
-
+    <string name="title_activity_warning">Warning</string>
+    <string name="OK">Okay, got it!</string>
+    
 </resources>

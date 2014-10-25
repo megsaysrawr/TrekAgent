@@ -34,6 +34,10 @@
             android:name=".CurrentLocation"
             android:label="@string/title_activity_current_location" >
         </activity>
+        <activity
+            android:name=".Warning"
+            android:label="@string/title_activity_warning" >
+        </activity>
     </application>
 
 </manifest>
